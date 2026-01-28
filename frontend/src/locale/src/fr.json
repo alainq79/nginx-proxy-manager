@@ -1,4 +1,61 @@
 {
+	"2fa.backup-codes-remaining": {
+		"defaultMessage": "Codes de sauvegarde restants: {count}"
+	},
+	"2fa.backup-warning": {
+		"defaultMessage": "Conservez ces codes de secours en lieu sûr. Chaque code ne peut être utilisé qu'une seule fois."
+	},
+	"2fa.disable": {
+		"defaultMessage": "Désactiver l'authentification à deux facteurs"
+	},
+	"2fa.disable-confirm": {
+		"defaultMessage": "Désactiver 2FA"
+	},
+	"2fa.disable-warning": {
+		"defaultMessage": "La désactivation de l'authentification à deux facteurs rendra votre compte moins sécurisé."
+	},
+	"2fa.disabled": {
+		"defaultMessage": "Désactivé"
+	},
+	"2fa.done": {
+		"defaultMessage": "J'ai archivé mes codes de sauvegarde"
+	},
+	"2fa.enable": {
+		"defaultMessage": "Activer l'authentification à deux facteurs"
+	},
+	"2fa.enabled": {
+		"defaultMessage": "Activé"
+	},
+	"2fa.enter-code": {
+		"defaultMessage": "Entrez le code de vérification"
+	},
+	"2fa.enter-code-disable": {
+		"defaultMessage": "Saisissez le code de vérification pour désactiver"
+	},
+	"2fa.regenerate": {
+		"defaultMessage": "Régénérer"
+	},
+	"2fa.regenerate-backup": {
+		"defaultMessage": "Régénérer les codes de sauvegarde"
+	},
+	"2fa.regenerate-instructions": {
+		"defaultMessage": "Saisissez un code de vérification pour générer de nouveaux codes de sauvegarde. Vos anciens codes seront invalidés."
+	},
+	"2fa.secret-key": {
+		"defaultMessage": "Clé Secrète"
+	},
+	"2fa.setup-instructions": {
+		"defaultMessage": "Scannez ce QR code avec votre application d'authentification ou saisissez le code secret manuellement."
+	},
+	"2fa.status": {
+		"defaultMessage": "Status"
+	},
+	"2fa.title": {
+		"defaultMessage": "Authentification à deux facteurs"
+	},
+	"2fa.verify-enable": {
+		"defaultMessage": "Vérifier et activer"
+	},
 	"access-list": {
 		"defaultMessage": "Liste d'accès"
 	},
@@ -43,6 +100,9 @@
 	},
 	"action.delete": {
 		"defaultMessage": "Supprimer"
+	},
+	"action.deny": {
+		"defaultMessage": "Refuser"
 	},
 	"action.disable": {
 		"defaultMessage": "Désactiver"
@@ -128,26 +188,29 @@
 	"certificates.dns.provider": {
 		"defaultMessage": "Fournisseur DNS"
 	},
+	"certificates.dns.provider.placeholder": {
+		"defaultMessage": "Selectionnez un fournisseur..."
+	},
 	"certificates.dns.warning": {
 		"defaultMessage": "Cette section requiert une certaine connaissance de Certbot et de ses plugins DNS. Veuillez consulter la documentation des plugins correspondants."
 	},
 	"certificates.http.reachability-404": {
-		"defaultMessage": "Un serveur a été trouvé sur ce domaine, mais il ne semble pas s'agir de Nginx Proxy Manager. Veuillez vérifier que votre domaine pointe bien vers l'adresse IP où votre instance NPM est exécutée."
+		"defaultMessage": "Un serveur a été trouvé sur ce domaine, mais il ne semble pas s'agir de NPMplus. Veuillez vérifier que votre domaine pointe bien vers l'adresse IP où votre instance NPMplus est exécutée."
 	},
 	"certificates.http.reachability-failed-to-check": {
 		"defaultMessage": "Impossible de vérifier l'accessibilité en raison d'une erreur de communication avec site24x7.com."
 	},
 	"certificates.http.reachability-not-resolved": {
-		"defaultMessage": "Aucun serveur n'est disponible pour ce domaine. Veuillez vérifier que votre domaine existe et pointe vers l'adresse IP où votre instance NPM est exécutée. Si nécessaire, le port 80 est ouvert dans votre routeur."
+		"defaultMessage": "Aucun serveur n'est disponible pour ce domaine. Veuillez vérifier que votre domaine existe et pointe vers l'adresse IP où votre instance NPMplus est exécutée. Si nécessaire, le port 80 est ouvert dans votre routeur."
 	},
 	"certificates.http.reachability-ok": {
 		"defaultMessage": "Votre serveur est accessible et la création de certificats devrait être possible."
 	},
 	"certificates.http.reachability-other": {
-		"defaultMessage": "Un serveur a été trouvé sur ce domaine, mais il a renvoyé un code d'état inattendu {code}. S'agit-il du serveur NPM ? Veuillez vérifier que votre domaine pointe bien vers l'adresse IP où votre instance NPM est exécutée."
+		"defaultMessage": "Un serveur a été trouvé sur ce domaine, mais il a renvoyé un code d'état inattendu {code}. S'agit-il du serveur NPMplus ? Veuillez vérifier que votre domaine pointe bien vers l'adresse IP où votre instance NPMplus est exécutée."
 	},
 	"certificates.http.reachability-wrong-data": {
-		"defaultMessage": "Un serveur a été trouvé sur ce domaine, mais il a renvoyé des données inattendues. S'agit-il du serveur NPM ? Veuillez vérifier que votre domaine pointe bien vers l'adresse IP où votre instance NPM est exécutée."
+		"defaultMessage": "Un serveur a été trouvé sur ce domaine, mais il a renvoyé des données inattendues. S'agit-il du serveur NPMplus ? Veuillez vérifier que votre domaine pointe bien vers l'adresse IP où votre instance NPMplus est exécutée."
 	},
 	"certificates.http.test-results": {
 		"defaultMessage": "Résultats du test"
@@ -156,7 +219,7 @@
 		"defaultMessage": "Ces domaines doivent déjà être configurés pour pointer vers cette installation."
 	},
 	"certificates.request.subtitle": {
-		"defaultMessage": "avec Let's Encrypt"
+		"defaultMessage": "avec Certbot"
 	},
 	"certificates.request.title": {
 		"defaultMessage": "Demander un nouveau certificat"
@@ -225,7 +288,7 @@
 		"defaultMessage": "Source"
 	},
 	"column.ssl": {
-		"defaultMessage": "SSL"
+		"defaultMessage": "TLS"
 	},
 	"column.status": {
 		"defaultMessage": "Statut"
@@ -264,7 +327,7 @@
 		"defaultMessage": "Les Wildcards ne sont pas prises en charge par cette autorité de certification."
 	},
 	"domains.force-ssl": {
-		"defaultMessage": "Forcer SSL"
+		"defaultMessage": "Forcer HTTPS"
 	},
 	"domains.hsts-enabled": {
 		"defaultMessage": "HSTS activé"
@@ -274,6 +337,12 @@
 	},
 	"domains.http2-support": {
 		"defaultMessage": "Prise en charge de HTTP/2"
+	},
+	"domains.http3-support": {
+		"defaultMessage": "Prise en charge de HTTP/3"
+	},
+	"domains.reuse-key": {
+		"defaultMessage": "Réutiliser la clé"
 	},
 	"domains.use-dns": {
 		"defaultMessage": "Utiliser le challenge DNS"
@@ -338,6 +407,12 @@
 	"host.flags.cache-assets": {
 		"defaultMessage": "Ressources du cache"
 	},
+	"host.flags.disable-buffering": {
+		"defaultMessage": "Désactiver le Buffering des requêtes/réponses"
+	},
+	"host.flags.fancyindex-upstream-compression": {
+		"defaultMessage": "Activer Fancyindex/compression par upstream"
+	},
 	"host.flags.preserve-path": {
 		"defaultMessage": "Préserver le chemin"
 	},
@@ -360,16 +435,28 @@
 		"defaultMessage": "HTTP uniquement"
 	},
 	"lets-encrypt": {
-		"defaultMessage": "Let's Encrypt"
+		"defaultMessage": "Certbot"
 	},
 	"lets-encrypt-via-dns": {
-		"defaultMessage": "Let's Encrypt via DNS"
+		"defaultMessage": "Certbot via DNS"
 	},
 	"lets-encrypt-via-http": {
-		"defaultMessage": "Let's Encrypt via HTTP"
+		"defaultMessage": "Certbot via HTTP"
 	},
 	"loading": {
 		"defaultMessage": "Chargement…"
+	},
+	"login.2fa-code": {
+		"defaultMessage": "Vérification du code"
+	},
+	"login.2fa-code-placeholder": {
+		"defaultMessage": "Entrez votre code"
+	},
+	"login.2fa-description": {
+		"defaultMessage": "Saisissez le code de votre application d'authentification"
+	},
+	"login.2fa-title": {
+		"defaultMessage": "Authentification à deux facteurs"
 	},
 	"login.title": {
 		"defaultMessage": "Connectez-vous à votre compte"
@@ -458,6 +545,9 @@
 	"options": {
 		"defaultMessage": "Options"
 	},
+	"or": {
+		"defaultMessage": "ou"
+	},
 	"password": {
 		"defaultMessage": "Mot de passe"
 	},
@@ -493,6 +583,9 @@
 	},
 	"proxy-host.forward-host": {
 		"defaultMessage": "Nom d'hôte de redirection / IP"
+	},
+	"proxy-host.forward-host-path": {
+		"defaultMessage": "Nom d'hôte de redirection / IP / Chemin"
 	},
 	"proxy-hosts": {
 		"defaultMessage": "Hôtes proxy"
@@ -566,8 +659,11 @@
 	"sign-in": {
 		"defaultMessage": "Se connecter"
 	},
+	"sign-in-with-oidc": {
+		"defaultMessage": "Se connecter avec OIDC"
+	},
 	"ssl-certificate": {
-		"defaultMessage": "Certificat SSL"
+		"defaultMessage": "Certificat TLS"
 	},
 	"stream": {
 		"defaultMessage": "Stream"
